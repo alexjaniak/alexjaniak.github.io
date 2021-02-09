@@ -110,6 +110,7 @@ header a {
         float:none;
     }
     #main-menu .container{
+        margin-left:0;
         margin:auto;
     }
 }

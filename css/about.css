@@ -20,3 +20,9 @@
         width:65%;
     }
 }
+
+@media (max-width:600px) {
+    #content-about {
+        width:90%;
+    }
+}
