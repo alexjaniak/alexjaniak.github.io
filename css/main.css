@@ -76,6 +76,10 @@ header a {
 
 
 /* menu */
+#main-menu .container{
+    margin-left:50px;
+}
+
 .menu a {
     font-size: 19px;
 }
@@ -104,5 +108,8 @@ header a {
     }
     #main-menu nav {
         float:none;
+    }
+    #main-menu .container{
+        margin:auto;
     }
 }
