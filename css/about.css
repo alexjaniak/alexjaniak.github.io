@@ -1,0 +1,22 @@
+/* == styles for about page == */
+/* frame */
+#frame-about {
+    min-height: 150px;
+}
+
+/* media queries*/
+@media (max-width:768px) {
+    #frame-about {
+        min-height:200px
+    }
+
+    #content-about {
+        width:75%;
+    }
+}
+
+@media (max-width:1100px) {
+    #content-about {
+        width:65%;
+    }
+}

@@ -1,0 +1,32 @@
+/* == styles for index page == */
+/* frame */
+#frame-index {
+    height:27.5vh;
+    min-height: 150px;
+}
+
+
+/* center-figure */
+#center-figure img {
+    width: 37.5%;
+    min-width: 420px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#center-figure figcaption {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/* media queries*/
+@media (max-width:768px) {
+    #frame-index {
+        min-height: 150px;
+    }
+    #center-figure {
+        margin-top: 50px;
+    }
+}
