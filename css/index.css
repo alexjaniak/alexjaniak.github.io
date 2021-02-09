@@ -7,17 +7,20 @@
 
 
 /* center-figure */
+#center-figure {
+    text-align: center;
+}
+
 #center-figure img {
     width: 37.5%;
     min-width: 420px;
     height: auto;
-    display: block;
+    display: inline;
     margin: 0 auto;
 }
 
 #center-figure figcaption {
-    padding-top: 10px;
-    text-align: center;
+    padding-top: 0.5em;
 }
 
 
