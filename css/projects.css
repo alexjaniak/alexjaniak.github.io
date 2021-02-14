@@ -18,6 +18,14 @@
     text-align: center;
 }
 
+#project-menu .left {
+    padding-right: 100px;
+}
+
+#project-menu .right {
+    padding-left: 100px;
+}
+
 
 /* media queries*/
 @media (max-width:768px) {
@@ -27,5 +35,21 @@
     #project-menu {
         width:370px;
         padding: 1.5em 0;
+    }
+}
+
+@media (max-width:475px) {
+    #project-menu {
+        width:90%;
+    }
+}
+
+@media (max-width:340px) {
+    #project-menu {
+        width:90%;
+    }
+    #project-menu .left, #project-menu .right {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
