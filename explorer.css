@@ -6,6 +6,7 @@ iframe {
     width: 80vw;
     height: 50vw;
     border: none;
+    padding-bottom: 25px;
 }
 
 h1 {
@@ -24,5 +25,29 @@ h1 {
 
 .home-button:hover {
     color: #20DF0F;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 680px) {
+    h1 {
+        font-size: 4px;
+    }
+}
+
+@media (max-width: 590px) {
+    h1 {
+        font-size: 3px;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 3px;
+    }
 }
 
