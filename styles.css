@@ -22,14 +22,24 @@ body {
     font-size: 14px;
 }
 
+.home-button {
+    text-decoration: none;
+    color: #20C20E;
+    font-style: normal;
+}
+
+.home-button:hover {
+    color: #15ff00;
+}
+
 a {
-    color: #20DF0F;
-    font-weight: 600;
+    color: #26e611;
+    font-weight: bolder;
     font-style: italic;
 }
 
 a:hover {
-    color: #20DF0F;
+    color:  #15ff00;
 }
 
 h1 {

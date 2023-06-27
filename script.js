@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             node.textContent += text.charAt(index);
             index++;
             if (index < text.length) {
-                var delay = Math.random() * 50 + 20;
+                var delay = Math.random() * 75 + 10;
                 setTimeout(type, delay);
             }
         }
