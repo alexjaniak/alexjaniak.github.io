@@ -18,7 +18,7 @@ body {
     font-family: 'classic_console_neueregular', 'Cascadia Code', sans-serif;
     padding-left: 25px;
     padding-right: 25px;
-    text-shadow: 0 0 5px #00ff55;
+    text-shadow: 0 0 5px #3cff00;
 }
 
 body::after {
@@ -29,9 +29,9 @@ body::after {
   width: 100vw;
   height: 100vh;
   background: repeating-linear-gradient(
-    rgba(0,0,0, 0.15),
-    rgba(0,0,0, 0.15) 1px,
-    rgba(0,0,0,0) 1px,
+    rgba(0,0,0, 0.05),
+    rgba(0,0,0, 0.05),
+    rgba(0,0,0,0),
     rgba(0,0,0) 2px
   );
   pointer-events: none;
@@ -67,7 +67,7 @@ body::after {
 a {
     color: #26e611;
     font-weight: bolder;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 a:hover {
