@@ -1,12 +1,21 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
+@font-face {
+    font-family: 'classic_console_neueregular';
+    src: url('./webfontkit-20230627-003616/clacon2-webfont.woff2') format('woff2'),
+         url('./webfontkit-20230627-003616/clacon2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     display: flex;
     justify-content: center;
-    font-size: 16px;
+    font-size: 18px;
     background-color: black;
     color: #20C20E;
-    font-family: 'Cascadia Code', sans-serif;
+    font-family: 'classic_console_neueregular', 'Cascadia Code', sans-serif;
     padding-left: 25px;
     padding-right: 25px;
     text-shadow: 0 0 5px #00ff55;
@@ -31,7 +40,7 @@ body::after {
 ::selection {
     background: #00ff0d;
     text-shadow: none;
-    color: rgb(0, 0, 0);
+    color: black;
   }
 
 #main-container {
@@ -42,7 +51,7 @@ body::after {
 }
 
 #contact {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .home-button {
@@ -72,7 +81,7 @@ h1 {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 ul {
