@@ -17,16 +17,6 @@ h1 {
     max-width: 800px;
 }
 
-.home-button {
-    text-decoration: none;
-    color: #20C20E;
-    font-style: normal;
-}
-
-.home-button:hover {
-    color: #20DF0F;
-}
-
 @media (max-width: 800px) {
     h1 {
         font-size: 5px;
