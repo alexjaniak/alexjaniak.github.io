@@ -28,6 +28,10 @@ a {
     font-style: italic;
 }
 
+a:hover {
+    color: #20DF0F;
+}
+
 h1 {
     margin-top: 50px;
     font-size:9px;
