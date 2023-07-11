@@ -12,7 +12,7 @@
 body {
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
     background-color: black;
     color: rgb(1, 199, 1);
     /*color: #20C20E;*/
@@ -49,11 +49,12 @@ body::after {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 #contact {
-    font-size: 18px;
+    margin: 0px;
+    font-size: 20px;
 }
 
 .home-button {
@@ -84,7 +85,7 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: normal;
 }
 
@@ -110,16 +111,16 @@ li::marker {
 
 @media (max-width: 800px) {
     body{
-        font-size: 14px;
+        font-size: 18px;
     }
     #contact {
-        font-size: 14px;
+        font-size: 18px;
     }
     h1 {
         font-size: 7px;
     }
     h2 {
-        font-size: 14px;
+        font-size: 20px;
     }
     li::marker {
         font-size: 0.75rem;
@@ -129,31 +130,31 @@ li::marker {
 
 @media (max-width: 680px) {
     body{
-        font-size: 12px;
+        font-size: 16px;
     }
     #contact {
-        font-size: 12px;
+        font-size: 16px;
     }
     h1 {
         font-size: 5px;
     }
     h2 {
-        font-size: 12px;
+        font-size: 18px;
     }
 }
 
 @media (max-width: 590px) {
     body{
-        font-size: 10px;
+        font-size: 14px;
     }
     #contact {
-        font-size: 12px;
+        font-size: 14px;
     }
     h1 {
         font-size: 5px;
     }
     h2 {
-        font-size: 10px;
+        font-size: 16px;
     }
     ul > li::before {
         padding-right: 10px;
