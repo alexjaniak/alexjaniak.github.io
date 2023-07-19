@@ -23,6 +23,7 @@ body {
     letter-spacing: 0.05em;
 }
 
+/*
 body::after {
   content: "";
   position: absolute;
@@ -38,7 +39,7 @@ body::after {
   );
   pointer-events: none;
 }
-
+*/
 ::selection {
     background: #00ff0d;
     text-shadow: none;
