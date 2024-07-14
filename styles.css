@@ -18,18 +18,23 @@ body {
     margin: 20px auto;
 }
 .panel {
-    background-color: #c0c0c0;
-    border: 2px solid #999;
+    background-color: #d7d4cb;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 10px 10px 0 #606060;
 }
 
 .panel-inner {
-    border: 2px solid #999;
     padding: 20px;
     margin: 3px;
 }
+
+.outline {
+    border: 1px solid #999;
+    height: 100%;
+    width: 100%;
+}
+
 .sidebar {
     padding: 20px;
     width: 200px;
@@ -39,6 +44,7 @@ body {
     padding: 20px;
     flex-grow: 1;
     border: 2px solid #999;
+    display: none;
 }
 
 h1, h2 {
@@ -72,10 +78,9 @@ h1, h2 {
 }
 .menu a:hover {
     background-color: #8b4545;
-    color: #e0e0e0;
+    color: #d7d4cb;
 }
 .menu-separator {
-    border-top: 1px solid #999;
     margin: 10px 0;
 }
 
@@ -87,6 +92,11 @@ h1, h2 {
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;
 }
+
+.active {
+    display: block;
+}
+
 @keyframes blink-animation {
     to {
         visibility: hidden;

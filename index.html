@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <div class="sidebar panel">
+            <div class="outline">
             <div class="panel-inner">
                 <div class="logo">                                                                                                            
                                                         ░░                                                                    
@@ -67,30 +68,97 @@
                                           ░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░                                                    
                 </div>
                 <ul class="menu">
-                    <li><a href="#site">Site</a></li>
-                    <li><a href="#me">Me</a></li>
-                    <li class="menu-separator"></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#writings">Writings</a></li>
-                    <li><a href="#demos">Demos</a></li>
+                    <li><a onclick="showPanel('site')">Site</a></li>
+                    <li><a onclick="showPanel('me')">Me</a></li>
+                    <hr class="menu"></hr>
+                    <li><a onclick="showPanel('contact')">Contact</a></li>
+                    <li><a onclick="showPanel('writings')">Writings</a></li>
+                    <li><a onclick="showPanel('demos')">Demos</a></li>
                 </ul>
             </div>
+            </div>
         </div>
-        <div class="content panel">
-            <div class="panel-inner">
-                <h1>About me</h1>
-                <hr></hr>
-                <div class="retro-text">
-                    <p>
-                        I’m a Junior @ Duke University where I’m pursuing a CS and Philosophy double major and minoring in Mathematics.  
-                        My specific interests include Artificial Intelligence, Zero-Knowledge Proofs, Decentralized Finance, Metaphysics, and Ancient Philosophy.
-                        Previously, I served as a Software Developer at <a href="https://spicefi.xyz">/SPICE_FINANCE</a>, an algorithmic digital asset lending protocol. For the next summer and beyond, 
-                        I’m actively seeking opportunities that will best prepare me for Machine Learning or Software Engineering roles.
-                    </p>
-                    <p>Hack on<span class="blink">_</span></p>
+        <div id="site" class="content panel active">
+            <div class="outline">
+                <div class="panel-inner">
+                    <h1>About me</h1>
+                    <hr></hr>
+                    <div class="retro-text">
+                        <p>
+                            HI!
+                        </p>
+                        <p>Hack on<span class="blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="me" class="content panel">
+            <div class="outline">
+                <div class="panel-inner">
+                    <h1>About me</h1>
+                    <hr></hr>
+                    <div class="retro-text">
+                        <p>
+                            I’m a Junior @ Duke University where I’m pursuing a CS and Philosophy double major and minoring in Mathematics.  
+                            My specific interests include Artificial Intelligence, Zero-Knowledge Proofs, Decentralized Finance, Metaphysics, and Ancient Philosophy.
+                            Previously, I served as a Software Developer at <a href="https://spicefi.xyz">/SPICE_FINANCE</a>, an algorithmic digital asset lending protocol. For the next summer and beyond, 
+                            I’m actively seeking opportunities that will best prepare me for Machine Learning or Software Engineering roles.
+                        </p>
+                        <p>Hack on<span class="blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="content panel">
+            <div class="outline">
+                <div class="panel-inner">
+                    <h1>Contact</h1>
+                    <hr></hr>
+                    <div class="retro-text">
+                        <p>
+                            You can reach me at example@example.com.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="writings" class="content panel">
+            <div class="outline">
+                <div class="panel-inner">
+                    <h1>Writings</h1>
+                    <hr></hr>
+                    <div class="retro-text">
+                        <p>
+                            Here are some of my writings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="demos" class="content panel">
+            <div class="outline">
+                <div class="panel-inner">
+                    <h1>Demos</h1>
+                    <hr></hr>
+                    <div class="retro-text">
+                        <p>
+                            Check out my demos.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function showPanel(panelId) {
+            // Hide all panels
+            document.querySelectorAll('.content').forEach(panel => {
+                panel.classList.remove('active');
+            });
+            
+            // Show the selected panel
+            document.getElementById(panelId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
