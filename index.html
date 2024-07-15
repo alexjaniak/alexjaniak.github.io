@@ -72,8 +72,8 @@
                     <li><a onclick="showPanel('me')">Me</a></li>
                     <hr class="menu"></hr>
                     <li><a onclick="showPanel('contact')">Contact</a></li>
-                    <li><a onclick="showPanel('writings')">Writings</a></li>
-                    <li><a onclick="showPanel('demos')">Demos</a></li>
+                    <li><a onclick="showPanel('papers')">Papers</a></li>
+                    <li><a onclick="showPanel('projects')">Projects</a></li>
                 </ul>
             </div>
             </div>
@@ -95,7 +95,7 @@
         <div id="me" class="content panel">
             <div class="outline">
                 <div class="panel-inner">
-                    <h1>About me</h1>
+                    <h1>Me</h1>
                     <hr></hr>
                     <div class="retro-text">
                         <p>
@@ -112,33 +112,157 @@
         <div id="contact" class="content panel">
             <div class="outline">
                 <div class="panel-inner">
-                    <h1>Contact</h1>
-                    <hr></hr>
+                    <h2>Contact</h2>
                     <div class="retro-text">
-                        <p>
-                            You can reach me at example@example.com.
+                        <p class="contact-item">
+                            <embed src="icons/mail.svg" type="image/svg+xml" class="contact-icon">
+                            <a href="mailto:alexander.janiak@outlook.com">alexander.janiak@outlook.com</a>
+                        </p>
+                        <p class="contact-item">
+                            <embed src="icons/github.svg" type="image/svg+xml" class="contact-icon">
+                            <a href="https://github.com/alexjaniak" target="_blank">@alexjaniak</a>
+                        </p>
+                        <p class="contact-item">
+                            <embed src="icons/linkedin.svg" type="image/svg+xml" class="contact-icon">
+                            <a href="https://linkedin.com/in/alexander-janiak" target="_blank">@alexander-janiak</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="writings" class="content panel">
+        <div id="papers" class="content panel">
             <div class="outline">
                 <div class="panel-inner">
-                    <h1>Writings</h1>
-                    <hr></hr>
-                    <div class="retro-text">
-                        <p>
-                            Here are some of my writings.
-                        </p>
-                    </div>
+                    <h1>Papers</h1>
+                    <ul class="paper-list">
+                        <li class="paper-item">
+                            <div class="paper-title">
+                                <a href="pdfs/An Analysis of Plato's Inquiry into Justice - Janiak.pdf" target="_blank">
+                                    An Analysis of Plato's Inquiry into Justice
+                                </a>
+                            </div>
+                            <div class="paper-meta">
+                                <span class="paper-date">2023-05-15</span>
+                                <span class="paper-tags">
+                                    <span class="paper-tag">philosophy</span>
+                                    <span class="paper-tag">ethics</span>
+                                    <span class="paper-tag">Plato</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="paper-item">
+                            <div class="paper-title">
+                                <a href="pdfs/Aristotle's Concession to Socrates.pdf" target="_blank">
+                                    Aristotle's Concession to Socrates
+                                </a>
+                            </div>
+                            <div class="paper-meta">
+                                <span class="paper-date">2023-03-22</span>
+                                <span class="paper-tags">
+                                    <span class="paper-tag">philosophy</span>
+                                    <span class="paper-tag">Aristotle</span>
+                                    <span class="paper-tag">Socrates</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="paper-item">
+                            <div class="paper-title">
+                                <a href="pdfs/Critique of The Knowledge Argument Against Physicalsm - Janiak.pdf" target="_blank">
+                                    Critique of The Knowledge Argument Against Physicalism
+                                </a>
+                            </div>
+                            <div class="paper-meta">
+                                <span class="paper-date">2023-01-10</span>
+                                <span class="paper-tags">
+                                    <span class="paper-tag">philosophy</span>
+                                    <span class="paper-tag">epistemology</span>
+                                    <span class="paper-tag">physicalism</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="paper-item">
+                            <div class="paper-title">
+                                <a href="pdfs/Locke and Arendt's Perspectives on Labour.pdf" target="_blank">
+                                    Locke and Arendt's Perspectives on Labour
+                                </a>
+                            </div>
+                            <div class="paper-meta">
+                                <span class="paper-date">2022-11-05</span>
+                                <span class="paper-tags">
+                                    <span class="paper-tag">philosophy</span>
+                                    <span class="paper-tag">political theory</span>
+                                    <span class="paper-tag">labour</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="paper-item">
+                            <div class="paper-title">
+                                <a href="pdfs/Moral Responsibility without Metaphysical Freedom.pdf" target="_blank">
+                                    Moral Responsibility without Metaphysical Freedom
+                                </a>
+                            </div>
+                            <div class="paper-meta">
+                                <span class="paper-date">2022-09-18</span>
+                                <span class="paper-tags">
+                                    <span class="paper-tag">philosophy</span>
+                                    <span class="paper-tag">ethics</span>
+                                    <span class="paper-tag">free will</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="paper-item">
+                            <div class="paper-title">
+                                <a href="pdfs/Moral Subjugation and Gender Inequality.pdf" target="_blank">
+                                    Moral Subjugation and Gender Inequality
+                                </a>
+                            </div>
+                            <div class="paper-meta">
+                                <span class="paper-date">2022-07-30</span>
+                                <span class="paper-tags">
+                                    <span class="paper-tag">philosophy</span>
+                                    <span class="paper-tag">ethics</span>
+                                    <span class="paper-tag">gender studies</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="paper-item">
+                            <div class="paper-title">
+                                <a href="pdfs/Socrates' View of Ignorance in The Apology.pdf" target="_blank">
+                                    Socrates' View of Ignorance in The Apology
+                                </a>
+                            </div>
+                            <div class="paper-meta">
+                                <span class="paper-date">2022-05-12</span>
+                                <span class="paper-tags">
+                                    <span class="paper-tag">philosophy</span>
+                                    <span class="paper-tag">Socrates</span>
+                                    <span class="paper-tag">epistemology</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="paper-item">
+                            <div class="paper-title">
+                                <a href="pdfs/The Perspective Argument - Janiak .pdf" target="_blank">
+                                    The Perspective Argument
+                                </a>
+                            </div>
+                            <div class="paper-meta">
+                                <span class="paper-date">2022-03-01</span>
+                                <span class="paper-tags">
+                                    <span class="paper-tag">philosophy</span>
+                                    <span class="paper-tag">logic</span>
+                                    <span class="paper-tag">argumentation</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div id="demos" class="content panel">
+        <div id="projects" class="content panel">
             <div class="outline">
                 <div class="panel-inner">
-                    <h1>Demos</h1>
+                    <h1>Projects</h1>
                     <hr></hr>
                     <div class="retro-text">
                         <p>
