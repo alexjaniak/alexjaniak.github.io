@@ -75,6 +75,8 @@ h1, h2 {
     display: block;
     padding: 5px 10px;
 }
+
+
 .menu a:hover {
     background-color: #8b4545;
     color: #d7d4cb;
@@ -94,27 +96,6 @@ h1, h2 {
 
 .active {
     display: block;
-}
-
-.contact-item {
-    display: flex;
-    margin-bottom: 20px;
-}
-.contact-item a {
-    display: flex;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-}
-.contact-icon {
-    display: flex;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.contact-item:hover {
-    scale: 1.05;
 }
 
 .paper-list {
