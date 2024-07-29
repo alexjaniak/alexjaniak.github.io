@@ -87,6 +87,19 @@ h1, h2 {
     letter-spacing: 2px;
 }
 
+.pfp-container {
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: center; /* Add align-items to center the children horizontally */
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 200px;
+    border: 2px solid #fff;
+    height: auto;
+}
+
 .logo {
     font-size: 2px;
     line-height: 1;
