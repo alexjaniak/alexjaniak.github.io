@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     height: 100vh;
     margin: 0;
 }
@@ -57,12 +57,15 @@ body {
     padding: 3px 7px;
 }
 
-.menu hr {
-    margin-left: -10px;
-    margin-right: -10px;
+hr {
     background-color: #fff;
     height: 2px;
     border: none;
+}
+
+.menu hr {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .menu a:hover {
@@ -127,34 +130,38 @@ img {
     list-style-type: none;
     padding: 0;
 }
+
 .list-item {
-    margin-bottom: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #fff;
     padding-bottom: 15px;
-}
-.list-item:last-child {
-    border-bottom: none;
+    margin-bottom: 15px;
 }
 
 .list-title {
-    font-weight: bold;
-    color: black;
+    color: #fff;
     margin-bottom: 5px;
 }
 .list-title a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.3s ease;
+    display: block;
+    padding: 3px 7px;
 }
 .list-title a:hover {
+    background-color: #fff;
     color: #1a1a1a;
-    text-decoration: underline;
+}
+
+.list hr {
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .list-meta {
     font-size: 14px;
-    color: #1a1a1a;
+    color: #fff;
     margin-top: 5px;
+    margin-left: 5px;
 }
 .list-date {
     font-style: italic;
@@ -163,7 +170,7 @@ img {
     margin-left: 10px;
 }
 .list-tag {
-    color: #8b0000;
+    color: #fff;
     padding: 2px 5px;
     border-radius: 3px;
     margin-right: 5px;
