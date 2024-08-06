@@ -71,7 +71,7 @@ body {
 }
 
 #contact .menu li a .label {
-    width: 75px; /* Adjust based on your longest label */
+    width: 90px; /* Adjust based on your longest label */
     text-align: left;
     padding-right: 10px;
 }
