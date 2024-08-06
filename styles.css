@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
 
 body {
     background-color: #1a1a1a;
     color: #fff;
-    font-family: 'Fira Code', monospace; 
-    font-feature-settings: "calt" 1;  /* Enable ligatures for programming */
+    font-family: "Fira Code", monospace;
+    font-feature-settings: "calt" 1; /* Enable ligatures for programming */
     line-height: 1.6;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 16px;
-    height: 100vh;
     margin: 0;
 }
 
@@ -19,6 +17,7 @@ body {
     width: 70%;
     max-width: 1000px;
     margin: 20px auto;
+    margin-top: 100px;
 }
 
 .panel {
@@ -39,6 +38,10 @@ body {
     padding: 0 10px;
 }
 
+.content .title {
+    left: 10%;
+}
+
 .menu {
     list-style-type: none;
     padding: 0;
@@ -55,6 +58,51 @@ body {
     text-decoration: none;
     display: block;
     padding: 3px 7px;
+}
+
+#contact .menu li a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#contact .menu ul:last-child {
+    margin-bottom: 0px;
+}
+
+#contact .menu li a .label {
+    width: 75px; /* Adjust based on your longest label */
+    text-align: left;
+    padding-right: 10px;
+}
+
+#contact .menu li a .dots {
+    flex: 1;
+    height: 1em;
+    background-image: radial-gradient(
+        circle,
+        currentColor 2px,
+        transparent 2px
+    );
+    background-size: 12px 12px; /* Increased dot size and spacing */
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: 0 10px;
+}
+
+#contact .menu li a .value {
+    width: 300px; /* Adjust based on your longest value */
+    text-align: left;
+}
+
+#notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 20px;
+    display: none;
+    z-index: 1000;
 }
 
 hr {
@@ -76,15 +124,18 @@ hr {
 .sidebar {
     max-width: 200px;
     margin-right: 20px;
+    max-height: 200px;
 }
 
 .content {
     padding: 20px;
     flex-grow: 1;
     display: none;
+    min-height: 180px;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -97,20 +148,14 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+.pfp-container h2 {
+    padding: 10px;
+}
+
 img {
     max-width: 200px;
     border: 2px solid #fff;
     height: auto;
-}
-
-.logo {
-    font-size: 2px;
-    line-height: 1;
-    white-space: pre;
-    font-family: monospace;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 15px;
 }
 
 .retro-text {
@@ -118,6 +163,7 @@ img {
     letter-spacing: 1px;
     line-height: 1.4;
 }
+
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;
 }
@@ -135,6 +181,12 @@ img {
     border-bottom: 1px solid #fff;
     padding-bottom: 15px;
     margin-bottom: 15px;
+}
+
+.list :last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .list-title {
@@ -157,6 +209,13 @@ img {
     margin-right: -20px;
 }
 
+.list-description {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
 .list-meta {
     font-size: 14px;
     color: #fff;
@@ -174,6 +233,7 @@ img {
     padding: 2px 5px;
     border-radius: 3px;
     margin-right: 5px;
+    border: 1px solid #fff;
 }
 
 @keyframes blink-animation {
