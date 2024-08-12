@@ -178,12 +178,12 @@ img {
 }
 
 .list-item {
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
 
-.list :last-child {
+.list li:last-child {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -205,15 +205,15 @@ img {
 }
 
 .list hr {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -40px;
+    margin-right: -40px;
 }
 
 .list-description {
     font-size: 14px;
     color: #fff;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .list-meta {
