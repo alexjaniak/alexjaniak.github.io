@@ -51,6 +51,7 @@ body {
 
 .menu li {
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .menu a {
