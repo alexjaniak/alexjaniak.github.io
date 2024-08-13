@@ -213,20 +213,21 @@ img {
     font-size: 14px;
     color: #fff;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .list-meta {
     font-size: 14px;
     color: #fff;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 5px;
 }
 .list-date {
     font-style: italic;
+    margin-right: 10px;
 }
 .list-tags {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 .list-tag {
     color: #fff;

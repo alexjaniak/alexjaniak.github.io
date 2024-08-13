@@ -11,12 +11,12 @@
         <div class="sidebar panel outline">
             <span class="title">menu</span>
             <ul class="menu">
-                <li><a onclick="showPanel('site')">site</a></li>
-                <li><a onclick="showPanel('me')">me</a></li>
+                <li><a id="site-button"onclick="showPanel('site')">site</a></li>
+                <li><a id="me-button"onclick="showPanel('me')">me</a></li>
                 <hr></hr>
-                <li><a onclick="showPanel('contact')">contact</a></li>
-                <li><a onclick="showPanel('papers')">papers</a></li>
-                <li><a onclick="showPanel('projects')">projects</a></li>
+                <li><a id="contact-button"onclick="showPanel('contact')">contact</a></li>
+                <li><a id="papers-button"onclick="showPanel('papers')">papers</a></li>
+                <li><a id="projects-button"onclick="showPanel('projects')">projects</a></li>
             </ul>
         </div>
         <div id="site" class="content panel outline active">
@@ -89,61 +89,89 @@
             <ul class="list">
                 <li class="list-item ">
                     <div class="list-title">
-                        <a href="pdfs/An Analysis of Plato's Inquiry into Justice - Janiak.pdf" target="_blank">
-                            An Analysis of Plato's Inquiry into Justice
+                        <a href="pdfs/Kant’s View of Freedom in The Critique of Pure Reason.pdf" target="_blank">
+                            Kant’s View of Freedom in <i>The Critique of Pure Reason</i>
                         </a>
                     </div>
                     <div class="list-meta">
-                        <span class="list-date">2023-05-15</span>
+                        <span class="list-date">2024-05-01</span>
                         <span class="list-tags">
-                            <span class="list-tag">philosophy</span>
-                            <span class="list-tag">ethics</span>
-                            <span class="list-tag">Plato</span>
+                            <span class="list-tag">Transcendentalism</span>
+                            <span class="list-tag">Metaphysics</span>
+                            <span class="list-tag">Free Will</span>
+                            <span class="list-tag">Kant</span>
                         </span>
                     </div>
                 </li>
                 <li class="list-item ">
                     <div class="list-title">
-                        <a href="pdfs/Aristotle's Concession to Socrates.pdf" target="_blank">
+                        <a href="pdfs/Kant on Hypothetical Judgments and The Pure Concept of Cause.pdf" target="_blank">
+                            Kant on Hypothetical Judgments and The Pure Concept of Cause
+                        </a>
+                    </div>
+                    <div class="list-meta">
+                        <span class="list-date">2024-03-20</span>
+                        <span class="list-tags">
+                            <span class="list-tag">Transcendentalism</span>
+                            <span class="list-tag">Kant</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item ">
+                    <div class="list-title">
+                        <a href="pdfs/Empirical and Atomic Concepts in Analytic Judgments.pdf" target="_blank">
+                            Empirical and Atomic Concepts in Analytic Judgments</i>
+                        </a>
+                    </div>
+                    <div class="list-meta">
+                        <span class="list-date">2024-05-01</span>
+                        <span class="list-tags">
+                            <span class="list-tag">Transcendentalism</span>
+                            <span class="list-tag">Kant</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item ">
+                    <div class="list-title">
+                        <a href="pdfs/Moral Subjugation and Gender Inequality.pdf" target="_blank">
+                            A Critical Analysis of Thomas Hobbes's Nature of Man
+                        </a>
+                    </div>
+                    <div class="list-meta">
+                        <span class="list-date">2023-10-13</span>
+                        <span class="list-tags">
+                            <span class="list-tag">Political Philosophy</span>
+                            <span class="list-tag">Ethics</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item ">
+                    <div class="list-title">
+                        <a href="pdfs/Aristotle’s Concession to Socrates.pdf" target="_blank">
                             Aristotle's Concession to Socrates
                         </a>
                     </div>
                     <div class="list-meta">
-                        <span class="list-date">2023-06-01</span>
+                        <span class="list-date">2023-04-30</span>
                         <span class="list-tags">
-                            <span class="list-tag">philosophy</span>
+                            <span class="list-tag">Ethics</span>
                             <span class="list-tag">Aristotle</span>
                             <span class="list-tag">Socrates</span>
                         </span>
                     </div>
                 </li>
-                <li class="list-item">
-                    <div class="list-title">
-                        <a href="pdfs/Critique of The Knowledge Argument Against Physicalsm - Janiak.pdf" target="_blank">
-                            Critique of The Knowledge Argument Against Physicalism
-                        </a>
-                    </div>
-                    <div class="list-meta">
-                        <span class="list-date">2023-06-15</span>
-                        <span class="list-tags">
-                            <span class="list-tag">philosophy</span>
-                            <span class="list-tag">physicalism</span>
-                            <span class="list-tag">epistemology</span>
-                        </span>
-                    </div>
-                </li>
                 <li class="list-item ">
                     <div class="list-title">
-                        <a href="pdfs/Locke and Arendt's Perspectives on Labour.pdf" target="_blank">
-                            Locke and Arendt's Perspectives on Labour
+                        <a href="pdfs/An Analysis of Plato's Inquiry into Justice - Janiak.pdf" target="_blank">
+                            An Analysis of Plato's Inquiry into Justice
                         </a>
                     </div>
                     <div class="list-meta">
-                        <span class="list-date">2023-07-01</span>
+                        <span class="list-date">2023-04-23</span>
                         <span class="list-tags">
-                            <span class="list-tag">philosophy</span>
-                            <span class="list-tag">political theory</span>
-                            <span class="list-tag">labour</span>
+                            <span class="list-tag">Ancient Philosophy</span>
+                            <span class="list-tag">Ethics</span>
+                            <span class="list-tag">Plato</span>
                         </span>
                     </div>
                 </li>
@@ -154,56 +182,54 @@
                         </a>
                     </div>
                     <div class="list-meta">
-                        <span class="list-date">2023-07-15</span>
+                        <span class="list-date">2023-04-19</span>
                         <span class="list-tags">
-                            <span class="list-tag">philosophy</span>
-                            <span class="list-tag">ethics</span>
-                            <span class="list-tag">free will</span>
-                        </span>
-                    </div>
-                </li>
-                <li class="list-item ">
-                    <div class="list-title">
-                        <a href="pdfs/Moral Subjugation and Gender Inequality.pdf" target="_blank">
-                            Moral Subjugation and Gender Inequality
-                        </a>
-                    </div>
-                    <div class="list-meta">
-                        <span class="list-date">2023-08-01</span>
-                        <span class="list-tags">
-                            <span class="list-tag">philosophy</span>
-                            <span class="list-tag">ethics</span>
-                            <span class="list-tag">gender studies</span>
+                            <span class="list-tag">Metaphysics</span>
+                            <span class="list-tag">Ethics</span>
+                            <span class="list-tag">Free Will</span>
                         </span>
                     </div>
                 </li>
                 <li class="list-item ">
                     <div class="list-title">
                         <a href="pdfs/Socrates' View of Ignorance in The Apology.pdf" target="_blank">
-                            Socrates' View of Ignorance in The Apology
+                            Socrates' View of Ignorance in <i>The Apology</i>
                         </a>
                     </div>
                     <div class="list-meta">
-                        <span class="list-date">2023-08-15</span>
+                        <span class="list-date">2023-02-17</span>
                         <span class="list-tags">
-                            <span class="list-tag">philosophy</span>
+                            <span class="list-tag">Ancient Philosophy</span>
                             <span class="list-tag">Socrates</span>
-                            <span class="list-tag">epistemology</span>
+                            <span class="list-tag">Epistemology</span>
                         </span>
                     </div>
                 </li>
                 <li class="list-item ">
                     <div class="list-title">
                         <a href="pdfs/The Perspective Argument - Janiak .pdf" target="_blank">
-                            The Perspective Argument
+                            The Sleeping Beauty Problem: The Perspective Argument
                         </a>
                     </div>
                     <div class="list-meta">
-                        <span class="list-date">2023-09-01</span>
+                        <span class="list-date">2022-12-19</span>
                         <span class="list-tags">
-                            <span class="list-tag">philosophy</span>
-                            <span class="list-tag">argumentation</span>
-                            <span class="list-tag">logic</span>
+                            <span class="list-tag">Epistemology</span>
+                            <span class="list-tag">Logic</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="list-title">
+                        <a href="pdfs/Critique of The Knowledge Argument Against Physicalsm - Janiak.pdf" target="_blank">
+                            Critique of The Knowledge Argument Against Physicalism
+                        </a>
+                    </div>
+                    <div class="list-meta">
+                        <span class="list-date">2022-10-31</span>
+                        <span class="list-tags">
+                            <span class="list-tag">Physicalism</span>
+                            <span class="list-tag">Epistemology</span>
                         </span>
                     </div>
                 </li>
@@ -269,7 +295,7 @@
                         </a>
                     </div>
                     <div class="list-meta">
-                        <div class="list-description">Just a simple calculator</div>
+                        <div class="list-description">Just a calculator</div>
                         <span class="list-tags">
                             <span class="list-tag">JS</span>
                             <span class="list-tag">HTML/CSS</span>
