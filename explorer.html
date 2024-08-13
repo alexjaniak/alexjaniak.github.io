@@ -1,35 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fractal Explorer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="explorer.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-NHLTJ7PCQL"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-</head>
-<body>
-    <div id="main-container" class="container">
-        <h1><a href="./index.html" class="home-button"><pre>
-            ______   __                                               __                               _____                      __            __       
-           /      \ |  \                                             |  \                             |     \                    |  \          |  \      
-          |  $$$$$$\| $$  ______   __    __  ______   _______    ____| $$  ______    ______            \$$$$$  ______   _______   \$$  ______  | $$   __ 
-          | $$__| $$| $$ /      \ |  \  /  \|      \ |       \  /      $$ /      \  /      \             | $$ |      \ |       \ |  \ |      \ | $$  /  \
-          | $$    $$| $$|  $$$$$$\ \$$\/  $$ \$$$$$$\| $$$$$$$\|  $$$$$$$|  $$$$$$\|  $$$$$$\       __   | $$  \$$$$$$\| $$$$$$$\| $$  \$$$$$$\| $$_/  $$
-          | $$$$$$$$| $$| $$    $$  >$$  $$ /      $$| $$  | $$| $$  | $$| $$    $$| $$   \$$      |  \  | $$ /      $$| $$  | $$| $$ /      $$| $$   $$ 
-          | $$  | $$| $$| $$$$$$$$ /  $$$$\|  $$$$$$$| $$  | $$| $$__| $$| $$$$$$$$| $$            | $$__| $$|  $$$$$$$| $$  | $$| $$|  $$$$$$$| $$$$$$\ 
-          | $$  | $$| $$ \$$     \|  $$ \$$\\$$    $$| $$  | $$ \$$    $$ \$$     \| $$             \$$    $$ \$$    $$| $$  | $$| $$ \$$    $$| $$  \$$\
-           \$$   \$$ \$$  \$$$$$$$ \$$   \$$ \$$$$$$$ \$$   \$$  \$$$$$$$  \$$$$$$$ \$$              \$$$$$$   \$$$$$$$ \$$   \$$ \$$  \$$$$$$$ \$$   \$$
-                                                                                                                                                             
-        </pre></a></h1>
-        <iframe class="resize" src="https://i.simmer.io/@alexjaniak/fractal-explorer"></iframe>
-        <!--
-        <div class="sub-text">
-            <p>
-            </p>
+            gtag("config", "G-NHLTJ7PCQL");
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fractal Explorer</title>
+        <link rel="icon" type="image/x-icon" href="terminal_icon.ico" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="explorer.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="fractal explorer" class="content panel outline active">
+                <span class="title">fractal-explorer</span>
+                <div class="iframe-container">
+                    <iframe
+                        class="outline"
+                        src="https://i.simmer.io/@alexjaniak/fractal-explorer"
+                    ></iframe>
+                </div>
+            </div>
         </div>
-        -->
-    </div>
-</body>
+    </body>
 </html>
