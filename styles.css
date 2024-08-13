@@ -114,6 +114,7 @@ body {
 #contact .menu li a .value {
     width: 300px; /* Adjust based on your longest value */
     text-align: left;
+    padding-left: 10px;
 }
 
 #notification {
