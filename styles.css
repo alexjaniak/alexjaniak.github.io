@@ -54,16 +54,37 @@ body {
 }
 
 .menu a {
-    color: #fff;
     text-decoration: none;
     display: block;
+    box-sizing: border-box;
     padding: 3px 7px;
 }
 
+.menu a:hover {
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+}
+
+.menu-active {
+    color: #1a1a1a;
+    background-color: #fff;
+}
+
+.menu hr {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
 #contact .menu li a {
+    color: #fff;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+}
+
+#contact .menu li a:hover {
+    color: #1a1a1a;
+    background-color: #fff;
 }
 
 #contact .menu ul:last-child {
@@ -109,16 +130,6 @@ hr {
     background-color: #fff;
     height: 2px;
     border: none;
-}
-
-.menu hr {
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.menu a:hover {
-    background-color: #fff;
-    color: #1a1a1a;
 }
 
 .sidebar {
