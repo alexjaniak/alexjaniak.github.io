@@ -242,6 +242,7 @@ img {
     margin-top: 10px;
     margin-left: 5px;
     display: flex;
+    align-items: center; /* Center date and tags vertically */
     flex-wrap: wrap; /* Ensures tags wrap within the container */
     flex-direction: row; /* Default to row layout for larger screens */
 }
@@ -315,6 +316,7 @@ img {
     /* Stack date above tags on smaller screens */
     .list-meta {
         flex-direction: column;
+        align-items: flex-start; /* Align items to the start in column layout */
     }
 
     .list-date {
