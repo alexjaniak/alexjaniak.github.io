@@ -1,10 +1,32 @@
 iframe {
     width: 70vw;
     height: 43.5vw;
+    border: none;
 }
 
 .iframe-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Media Queries */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .iframe-container {
+        padding-top: 10px;
+    }
+    iframe {
+        width: 85vw;
+        height: 52vw; /* Adjust height to maintain aspect ratio */
+    }
+}
+
+/* Smartphones (480px and below) */
+@media screen and (max-width: 480px) {
+    iframe {
+        width: 95vw;
+        height: 58.5vw; /* Adjust height to maintain aspect ratio */
+    }
 }
