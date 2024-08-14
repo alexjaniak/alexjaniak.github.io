@@ -388,4 +388,10 @@ img {
         padding: 1px 4px;
         font-size: 12px;
     }
+
+    /* Hide contact values and dots on smaller screens */
+    #contact .menu li a .value,
+    #contact .menu li a .dots {
+        display: none;
+    }
 }
