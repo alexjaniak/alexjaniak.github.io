@@ -211,12 +211,14 @@ img {
     color: var(--primary-color);
     margin-bottom: 5px;
 }
+
 .list-title a {
     color: inherit;
     text-decoration: none;
     display: block;
     padding: 3px 7px;
 }
+
 .list-title a:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -239,20 +241,30 @@ img {
     color: var(--primary-color);
     margin-top: 10px;
     margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap; /* Ensures tags wrap within the container */
+    flex-direction: row; /* Default to row layout for larger screens */
 }
+
 .list-date {
     font-style: italic;
     margin-right: 10px;
 }
+
 .list-tags {
-    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Adds space between tags */
+    margin-top: 5px;
 }
+
 .list-tag {
     color: var(--primary-color);
     padding: 2px 5px;
     border-radius: 3px;
-    margin-right: 5px;
     border: 1px solid var(--primary-color);
+    white-space: nowrap; /* Prevents tags from breaking into multiple lines */
+    margin-bottom: 5px;
 }
 
 @keyframes blink-animation {
@@ -260,6 +272,12 @@ img {
         visibility: hidden;
     }
 }
+
+.sidebar > .menu li a {
+    /* Additional rules */
+}
+
+/* Media Queries */
 
 /* Tablets (768px and below) */
 @media screen and (max-width: 768px) {
@@ -293,12 +311,21 @@ img {
     .pfp-container {
         margin-bottom: 15px;
     }
+
+    /* Stack date above tags on smaller screens */
+    .list-meta {
+        flex-direction: column;
+    }
+
+    .list-date {
+        margin-bottom: 5px; /* Adds spacing between date and tags */
+    }
 }
 
 /* Smartphones (480px and below) */
 @media screen and (max-width: 480px) {
-    body,
-    .retro-text {
+    .retro-text,
+    body {
         font-size: 14px;
     }
 
@@ -342,5 +369,23 @@ img {
 
     .pfp-container {
         margin-bottom: 10px;
+    }
+
+    /* Stack date above tags for even smaller screens */
+    .list-meta {
+        flex-direction: column;
+    }
+
+    .list-date {
+        margin-bottom: 5px;
+    }
+
+    .list-tags {
+        gap: 3px; /* Reduce gap between tags for smaller screens */
+    }
+
+    .list-tag {
+        padding: 1px 4px;
+        font-size: 12px;
     }
 }
